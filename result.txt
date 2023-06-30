@@ -1,0 +1,12 @@
+Units to be sent via  Route_from__X_P1 = 0.0
+Units to be sent via  Route_from__X_P2 = 800.0
+Units to be sent via  Route_from__X_P3 = 0.0
+Units to be sent via  Route_from__X_P4 = 2200.0
+Units to be sent via  Route_from__Y_P1 = 2000.0
+Units to be sent via  Route_from__Y_P2 = 2000.0
+Units to be sent via  Route_from__Y_P3 = 3050.0
+Units to be sent via  Route_from__Y_P4 = 0.0
+Total Transportation Cost will be  =  180500.0 
+
+Status of the solution: Optimal 
+

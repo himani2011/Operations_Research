@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MT</title>
+</head>
+<style>
+	body 
+	{
+      background-color: "#F1C5EE";
+		max-width: 100%;
+	}
+   .column 
+   {
+      float: left;
+      width: 50%;
+   }
+
+   .row:after {
+      content: "";
+      clear: both;
+      display: table;
+   }
+   .sub
+   {
+      padding: 15px 32px;
+      text-align: center;
+      border: none;
+      background-color: #008CBA;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+   }	
+</style>
+<!-- Javascript  -->
+<script src="script.js"></script>
+
+<body style="background-color: #F1C5EE;">
+
+   <div class="row">
+      <div class="column">
+      <h2><u>Production</u></h2>
+
+   <form action="/submit" method="post">
+      <h5>Please input the profits in $ (dollars) and raw material details in units (e.g. 2 units, 3 units etc.)</h5>
+    <label for="p1">Profit from Product 1:</label><br>
+    <input type="number" id="p1" name="p1" required><br><br>
+    <label for="p2">Profit from Product 2:</label><br>
+    <input type="number" id="p2" name="p2" required><br><br>
+    <label for="p3">Profit from Product 3:</label><br>
+    <input type="number" id="p3" name="p3" required ><br><br>
+    <label for="totalRaw">Total raw material available:</label><br>
+    <input type="number" id="totalRaw" name="totalRaw" required ><br><br>
+    <label for="r1">Raw material needed for product 1:</label><br>
+    <input type="number" id="r1" name="r1" required ><br><br>
+    <label for="r2">Raw material needed for product 2:</label><br>
+    <input type="number" id="r2" name="r2" required ><br><br>
+    <label for="r3">Raw material needed for product 3:</label><br>
+    <input type="number" id="r3" name="r3" required ><br><br>
+    <label for="totalProds">Maximum number of products that should be produced in a day: </label><br>
+    <input type="number" id="totalProds" name="totalProds" required><br><br>
+
+    <input type="submit" value="Submit" class="sub">
+ </form>
+   </div>
+    
+<div class="column">
+   <h2><u>Transportation</u></h2>
+   
+   <form action="/submit2" method="post">
+      <h5>Please input the costs in $ (dollars) and demand-supply capacity details in units (e.g. 200 units, 500 units etc.)</h5>
+      <label for="s1">Supply capacity of godown X:</label><br>
+      <input type="number" id="s1" name="s1" required><br><br>
+      <label for="s2">Supply capacity of godown Y:</label><br>
+      <input type="number" id="s2" name="s2" required><br><br>
+      <label for="d1">Demand from customer point 1:</label><br>
+      <input type="number" id="d1" name="d1" required><br><br>
+      <label for="d2">Demand from customer point 2:</label><br>
+      <input type="number" id="d2" name="d2" required><br><br>
+      <label for="d3">Demand from customer point 3:</label><br>
+      <input type="number" id="d3" name="d3" required><br><br>
+      <label for="d4">Demand from customer point 4:</label><br>
+      <input type="number" id="d4" name="d4" required><br><br>
+  
+      <label for="cx1">Transportation cost from godown X to customer point 1:</label><br>
+      <input type="number" id="cx1" name="cx1" required><br><br>
+      <label for="cx2">Transportation cost from godown X to customer point 2:</label><br>
+      <input type="number" id="cx2" name="cx2" required><br><br>
+      <label for="cx3">Transportation cost from godown X to customer point 3:</label><br>
+      <input type="number" id="cx3" name="cx3" required><br><br>
+      <label for="cx4">Transportation cost from godown X to customer point 4:</label><br>
+      <input type="number" id="cx4" name="cx4" required><br><br>
+  
+      <label for="cy1">Transportation cost from godown Y to customer point 1:</label><br>
+      <input type="number" id="cy1" name="cy1" required><br><br>
+      <label for="cy2">Transportation cost from godown Y to customer point 2:</label><br>
+      <input type="number" id="cy2" name="cy2" required><br><br>
+      <label for="cy3">Transportation cost from godown Y to customer point 3:</label><br>
+      <input type="number" id="cy3" name="cy3" required><br><br>
+      <label for="cy4">Transportation cost from godown Y to customer point 4:</label><br>
+      <input type="number" id="cy4" name="cy4" required><br><br>
+  
+      <input type="submit" value="Submit" class="sub">
+  
+   </form>
+</div>
+</div>
+</body>
+</html>
